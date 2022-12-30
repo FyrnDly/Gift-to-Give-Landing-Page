@@ -1,0 +1,126 @@
+.product .container{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0px;
+  width: 1320px;
+  margin: 0px auto;
+  overflow: hidden;
+  justify-content: center;
+}
+.product{
+  margin-bottom: 40px;
+  padding-top: 64px;
+}
+.product h1 {
+  text-align: left;
+  font-family: 'Times New Roman', cursive;
+}
+.product h2{
+  text-align: center;
+  margin: 20px 10px auto;
+}
+
+.image-container {
+  flex: 300px;
+  width: 300px;
+  height: 300px;
+  position: relative;
+  margin: 10px auto;
+  cursor: pointer;
+}
+
+.image-container .img {
+  width: 300px;
+  height: 300px;
+  border-radius: 20px;
+  position: absolute;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 4px 8px 10px rgba(0, 0, 0, 0.10), 0 15px 12px rgba(0, 0, 0, 0.02);
+}
+
+.image-caption {
+  width: 300px;
+  height: 300px;
+  background: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  opacity: 0;
+  border-radius: 20px;
+  transition: all 300ms ease-in-out;
+  -webkit-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  -ms-transition: all 300ms ease-in-out;
+}
+
+.image-caption h1 {
+  padding: 20px 0px 5px 0px;
+  text-align: left;
+  margin-left: 15px;
+  text-transform: uppercase;
+  font-family: 'Times New Roman', cursive;
+  font-size: 15px;
+  color: #F374BC;
+}
+
+.image-caption p {
+  text-align: left;
+  margin-left: 15px;
+  font-family: 'Times New Roman', monospace;
+  color: #fff;
+}
+
+.image-container:hover .image-caption {
+  opacity: 1;
+}
+
+
+/* media queries */
+@media screen and (min-width: 1200px) and (max-width: 1400px) {
+  .product .container {
+    width: 1140px;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  .product .container {
+    width: 960px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .product .container {
+    width: 720px;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  .product .container {
+    width: 540px;
+    flex-direction: column;
+  }
+  .image-container{
+    margin: 10px auto;
+  }
+}
+@media screen and (max-width: 576px) {
+  .product .container {
+    width: 100%;
+    flex-direction: column;
+  }
+  .image-container{
+    margin: 10px auto;
+
+  }
+}
+/* @media all and (min-width: 0px) and (max-width: 520px) {
+  .product .container {
+    width: 100%;
+    height: 100%;
+    padding: 0px 70px;
+  }
+}
+
+@media all and (min-width: 521px) and (max-width: 700px) {
+  .product .container {
+    width: 100%;
+    height: 100%;
+  }
+} */

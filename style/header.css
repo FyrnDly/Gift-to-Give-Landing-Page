@@ -1,0 +1,53 @@
+header {
+  padding-top: 64px;
+  background-image: url("/assets/shawnee-wilborn-tMt-m2zECRc-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+}
+header .container {
+  display: flex;
+  width: 1320px;
+  height: 75vh;
+  margin: 0px auto;
+  flex-direction: column;
+}
+header .container .text {
+  margin: auto;
+  text-align: center !important;
+  color: #f0cde0;
+  text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.789);
+}
+header .container .text b {
+  color: #F374BC;
+}
+@media screen and (min-width: 1200px) and (max-width: 1400px) {
+  header .container {
+    width: 1140px;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  header .container {
+    width: 960px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  header .container {
+    width: 720px;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  header {
+    height: 100vh;
+  }
+  header .container {
+    width: 540px;
+  }
+}
+@media screen and (max-width: 576px) {
+  header {
+    height: 100vh;
+  }
+  header .container {
+    width: 100%;
+  }
+}
